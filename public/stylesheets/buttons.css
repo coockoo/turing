@@ -1,0 +1,32 @@
+.controls {
+    width: 360px;
+    overflow: hidden;
+    clear: both;
+    margin: 0 auto;
+}
+.button {
+    width: 80px;
+    height: 40px;
+    box-sizing: border-box;
+    margin: 5px 0 5px 20px;
+    line-height: 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: rgba(52, 152, 219,1.0);
+    outline: none;
+    color: rgb(255,255,255);
+}
+.button:hover {
+    background-color: rgb(52, 160, 229);
+}
+.controls button {
+    float: right;
+    display: inline-block;
+}
+.controls .stop {
+    background-color: rgb(218, 79, 73);
+    color: rgb(255,255,255);
+}
+.controls .stop:hover {
+    background-color: rgb(228, 78, 72);
+}

@@ -1,0 +1,43 @@
+.tape-container {
+    clear: both;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(255,255,255);
+    border-top: 1px solid rgb(0,0,0);
+    padding-bottom: 20px;
+    padding-top: 4px;
+    padding-left: 5px;
+}
+.tape-container h1 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.tape {
+    width: 1000%;
+}
+.tape span {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+}
+.tape span.current {
+    background-color: rgb(52, 152, 219);
+}
+.tape-container .tape-reset {
+    line-height: 16px;
+    font-size: 12px;
+    padding: 2px;
+    display: inline-block;
+    background-color: rgb(218, 79, 73);
+    margin-left: 5px;
+}
+.tape-container .tape-reset:hover {
+    overflow: hidden;
+
+}

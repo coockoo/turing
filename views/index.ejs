@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Turing machine - JavaScript implementation</title>
+    <link rel="stylesheet" href="/stylesheets/style.css"/>
+    <link rel="stylesheet" href="/stylesheets/new-rule-form.css"/>
+    <link rel="stylesheet" href="/stylesheets/rules.css"/>
+    <link rel="stylesheet" href="/stylesheets/tape.css"/>
+    <link rel="stylesheet" href="/stylesheets/line-form.css"/>
+    <link rel="stylesheet" href="/stylesheets/buttons.css"/>
+    <link rel="stylesheet" href="/stylesheets/error.css"/>
+    <script src="/js/lib/jquery-2.1.0.js"></script>
+    <script src="/js/lib/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="/js/lib/jquery.fileupload.js"></script>
+    <script src="/js/turingMachine.js"></script>
+    <script src="/js/turingMachineUI.js"></script>
+    <script src="/js/main.js"></script>
+    <script>
+        window.config = {
+            backendURL: 'http://localhost:8080'
+        };
+        $(document).ready(function () {
+            main();
+        });
+    </script>
+</head>
+<body>
+<div class="main-container">
+    <form action="" class="new-rule-form border shadow">
+        <div>
+            <label for="state">State</label>
+            <input name="state" type="text" id="state"/>
+        </div>
+        <div>
+            <label for="cell">Cell</label>
+            <input name="cell" id="cell" type="text" maxlength="1"/>
+        </div>
+        <div>
+            <label for="replace">Replace</label>
+            <input name="replace" id="replace" type="text" maxlength="1"/>
+        </div>
+        <div class="direction">
+            <div>
+                <input name="move" id="move-left" type="radio" value="left" checked/>
+                <label for="move-left">Left</label>
+            </div>
+            <div>
+                <input name="move" id="move-right" type="radio" value="right"/>
+                <label for="move-right">Right</label>
+            </div>
+        </div>
+        <div>
+            <label for="next">Next</label>
+            <input name="next" id="next" type="text"/>
+        </div>
+        <input type="submit" value="+"/>
+    </form>
+    <form action="" class="tape-form line-form border shadow">
+        <label for="tape">Tape</label>
+        <input type="text" id="tape" name="tape"/>
+        <input type="submit" value="set"/>
+
+    </form>
+    <form action="" class="alphabet-form line-form border shadow">
+        <label for="alphabet">Alphabet</label>
+        <input type="text" id="alphabet" name="alphabet"/>
+        <input type="submit" value="set"/>
+    </form>
+    <ul class="rules">
+    </ul>
+    <div class="controls">
+        <button class="stop button shadow border" style="display: none;">Stop</button>
+        <button class="run button shadow border" style="display: none;">Run</button>
+        <button class="step button shadow border">Step</button>
+    </div>
+    <div class="error-log-container border shadow">
+        <h1 class="error-log-title">Error log</h1>
+        <div class="error-log"></div>
+    </div>
+</div>
+<div class="save-container">
+    <div class="save-controls">
+        <form action="" class="save-form line-form border shadow">
+            <label for="name"></label>
+            <input type="text" id="name" name="name"/>
+            <input type="submit" value="Save"/>
+        </form>
+        <h2>Load:</h2>
+        <form action="" class="save-form line-form border shadow">
+            <input type="file" id="filename" name="filename"/>
+        </form>
+        <!--<button class="save-as button shadow border">Save as...</button>-->
+        <!--<button class="load button shadow border">Load</button>-->
+    </div>
+    <div class="loads">
+
+    </div>
+</div>
+<div class="tape-container">
+    <h1 class="tape-title">Tape</h1>
+    <button class="tape-reset border shadow">Reset</button>
+    <span class="state"></span>
+    <div class="tape"></div>
+</div>
+</body>
+</html>

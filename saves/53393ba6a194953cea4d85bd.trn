@@ -1,0 +1,1 @@
+{"rules":[{"state":"1","cell":"_","replace":"A","move":"right","next":"2","id":0},{"state":"2","cell":"_","replace":"B","move":"right","next":"3","id":1}],"name":"Test","alphabet":["_","A","B","C"],"_id":"53393ba6a194953cea4d85bd"}

@@ -1,0 +1,88 @@
+.new-rule-form {
+    width: 360px;
+    margin: 0 auto;
+}
+.new-rule-form > div {
+    display: inline-block;
+    float: left;
+}
+.new-rule-form label {
+    width: 60px;
+    height: 60px;
+    display: block;
+    line-height: 60px;
+    text-align: center;
+    border-left: 1px solid rgba(255,255,255, 0.4);
+    border-right: 1px solid rgba(52, 73, 94, 0.7);
+    border-bottom: 1px solid rgba(52, 73, 94, 0.7);
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+    background-color: rgba(52, 152, 219, 0.20);
+}
+.new-rule-form input[type="text"] {
+    width: 60px;
+    height: 60px;
+    display: block;
+    text-align: center;
+    font-size: 32px;
+    border-left: 1px solid rgba(255,255,255, 0.4);
+    border-right: 1px solid rgba(52, 73, 94, 0.7);
+    border-top: 1px solid rgba(255,255,255, 0.4);
+    box-sizing: border-box;
+}
+.new-rule-form input[type="radio"] {
+    text-align: center;
+}
+.new-rule-form input[type="submit"] {
+    width: 60px;
+    height: 120px;
+    display: inline-block;
+    line-height: 120px;
+    font-size: 32px;
+    cursor: pointer;
+    color: rgb(255,255,255);
+    background-color: rgb(39, 174, 96);
+}
+
+.new-rule-form input[type="submit"]:hover {
+    background-color: rgb(39, 180, 102);
+    cursor: auto;
+}
+.new-rule-form input[type="submit"]:disabled {
+    color: rgb(192, 57, 43);
+    background-color: rgba(52, 152, 219, 0.20);
+}
+.new-rule-form .direction {
+    width: 60px;
+}
+.new-rule-form .direction div {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 60px;
+    height: 60px;
+}
+.new-rule-form .direction label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    color: rgb(39, 174, 96);
+    background-color: rgba(52, 152, 219, 0.20);
+    border-bottom: 1px solid rgba(52, 73, 94, 0.7);
+}
+.new-rule-form .direction div:last-child label {
+    border-bottom: none;
+}
+.new-rule-form .direction label:hover {
+    background-color: rgb(39, 174, 96);
+    color: rgb(255,255,255);
+}
+.new-rule-form .direction input {
+    display: none;
+}
+.new-rule-form .direction input:checked + label {
+    background-color: rgb(39, 174, 96);
+    color: rgb(255,255,255);
+}

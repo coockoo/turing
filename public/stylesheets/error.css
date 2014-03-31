@@ -1,0 +1,17 @@
+.error-log-container {
+    background-color: rgb(255,255,255);
+    width: 350px;
+    padding: 5px;
+    height: 150px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: 0 auto;
+    text-align: left;
+}
+.error-log-container .error-log-title {
+    font-size: 14px;
+
+}
+.error-log {
+
+}

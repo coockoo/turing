@@ -1,0 +1,23 @@
+.rules {
+    overflow: hidden;
+    clear: both;
+    width: 100%;
+}
+.rule span {
+    float: left;
+    width: 60px;
+}
+.rule .regular {
+    text-align: center;
+}
+.rule .regular:first-child {
+    border-left: 5px solid rgba(52, 152, 219,1.0);
+}
+.rule .regular.right:before {
+    content: "\25B6";
+}
+.rule .regular.left:before {
+    content: "\25C0";
+}
+
+

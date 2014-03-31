@@ -1,0 +1,1 @@
+{"rules":[{"state":"1","cell":"_","replace":"A","move":"right","next":"2","id":0},{"state":"2","cell":"_","replace":"B","move":"right","next":"3","id":1},{"state":"1","cell":"A","replace":"B","move":"right","next":"2","id":2},{"state":"2","cell":"C","replace":"B","move":"right","next":"1","id":3}],"name":"Test","alphabet":["_","A","B","C"],"_id":"5339414da194953cea4d85bf"}

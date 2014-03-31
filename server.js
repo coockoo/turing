@@ -5,10 +5,10 @@ var ProgramProvider = require('./program_provider');
 var app = express();
 var programProvider = new ProgramProvider('localhost', 27017);
 
-app.set('env', 'development');
+app.set('env', 'production');
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-app.use(express.logger('dev'));
+//app.use(express.logger('dev'));
 app.use(express.static(path.join(__dirname, '/public')));
 app.configure(function() {
     app.use(express.json());
